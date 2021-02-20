@@ -59,16 +59,16 @@
         document.body.removeChild(t);
     }
     $('.cInfo01 span').click(function() {
-        copyToClipboard('thdek13@hanmail.net');
-        alert('클립보드로 복사되었습니다.');
+        copyToClipboard('davidkim9299@gmail.com');
+        alert('Copied');
     })
 			$('.cInfo02 span').click(function() {
-        copyToClipboard('jeong1233');
-        alert('클립보드로 복사되었습니다.');
+        copyToClipboard('github.com/davidkim9299');
+        alert('Copied');
     })
 			$('.cInfo03 span').click(function() {
-        copyToClipboard('http://jeong1233.dothome.co.kr/portfolio');
-        alert('클립보드로 복사되었습니다.');
+        copyToClipboard('http://dongryulkim9299.com');
+        alert('Copied');
     })
 	//클립보드복사//
 			

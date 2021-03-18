@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<!--
+	Astral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dongryul Kim</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#aboutme" class="icon solid fa-user"><span>About Me</span></a>
+						<a href="#project" class="icon solid fa-folder"><span>Project</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+						
+					<div id="main">
+						<!-- Me -->
+					
+							<article id="home" class="panel intro">
+								<header><center>
+									<h1>DONGRYUL KIM</h1></center>
+								</header>
+								
+							</article>
+
+						<!-- about me -->
+							<article id="aboutme" class="panel">
+								<header>
+									<h2>About Me</h2>
+								</header>
+								<section>
+									<div class="row">
+										<div class="col-12 col-6-small col-12-small">
+											<h2>Educations</h2>
+										</div>
+										<div class="col-12 col-6 col-12-small">
+											<h2>Work Experiences</h3>
+										</div>
+										<div class="col-12 col-6 col-12-small">
+											<h2>Leadership Experiences</h3>
+										</div>
+										<div class="col-12 col-6 col-12-small">
+											<h2>Reletives Courseworks</h3>
+										</div>	
+									</div>
+								</section>
+							</article>
+
+
+						<!-- Project -->
+							<article id="project" class="panel">
+								<header>
+									<h2>Project</h2>
+								</header>
+								<p>
+									Click project image to see more
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://dongryulkim9299.com/Project/" class="image fit"><img src="images/ComfortSound.jpg" alt=""></a><h3>Comfort Sound</h3>Create web & Mobile app called "Comfort Sound"<br>Used:HTML/CSS, JavaScript, Java, Kotlin, AWS
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://github.com/davidkim9299/Python/tree/main/discordBot/discordBot" class="image fit"><img src="images/Discord.jpg" alt=""></a><h3>Discord Bot</h3>Create personal discord bot to automatically respond to other user's question.<br>Used: Python
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://github.com/davidkim9299/Java/tree/main/Linking%20JAVA%20w%20SQL" class="image fit"><img src="images/Java+SQL.jpg" alt=""></a><h3>Java w/ MySQL</h3>Link Java and MySQL to create and access to database<br>Used:Java, JSP, MySQL
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+									<p>E-mail will be sent to Dongryul Kim's e-mail address</p>
+								</header>
+								<form id="form" action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="phone" placeholder="Phone" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" id="button" value="Send Email" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li><a href="https://www.linkedin.com/in/dongryul-kim-047609162/" title="LinkedIn"class="fab fa-linkedin"><span class="label"></span></a></li>
+							<li><a href="https://www.github.com/davidkim9299" class="fab fa-github" title="GitHub"><span class="label"></span></a></li>
+							<li><a href="https://drive.google.com/file/d/1nNMJfaOeRLXquuxIt_zG6VIsptckvn7B/view?usp=sharing" title="RESUME" class="far fa-file"><span class="label"></span></a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+		<!-- Email -->
+			<script type="text/javascript" 
+				src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+			<script type="text/javascript">
+  				emailjs.init('user_qB90qCCSv8AviaLvtEJ8k')
+			</script>
+			<script>
+      				const btn = document.getElementById('button');
+				document.getElementById('form')
+ 				.addEventListener('submit', function(event) {
+   					event.preventDefault();
+   					btn.value = 'Sending...';
+
+   					const serviceID = 'default_service';
+   					const templateID = 'template_drkim9299';
+
+   					emailjs.sendForm(serviceID, templateID, this)
+    					.then(() => {
+      						btn.value = 'Send Email';
+      						alert('Sent!');
+    					}, 
+					(err) => {
+      						btn.value = 'Send Email';
+      							alert(JSON.stringify(err));
+    					});
+				});
+      </script>
+
+	</body>
+</html>

@@ -1,3 +1,3 @@
-# FEB 1st-------------------------------------------------
+# About
 
 Personal Portfolio Website

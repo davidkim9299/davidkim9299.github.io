@@ -1,8 +1,3 @@
-# FEB 1st-------------------------------------------------
+# About
 
-  Upload code
-  
-  need to be add
-    - Introduction
-    - Projects
-    - E-mail address
+Personal Portfolio Website
